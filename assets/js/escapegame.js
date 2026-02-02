@@ -29,3 +29,25 @@ if (track && slides.length && prevBtn && nextBtn) {
     window.addEventListener('resize', updateCarousel);
     updateCarousel();
 }
+
+// --- LIGHTBOX ---
+const images = document.querySelectorAll('.carousel-track img');
+
+images.forEach(img => {
+    img.addEventListener('click', () => {
+        const overlay = document.createElement('div');
+        overlay.classList.add('lightbox-overlay');
+
+        const bigImg = document.createElement('img');
+        bigImg.src = img.src;
+        bigImg.classList.add('lightbox-image');
+
+        overlay.appendChild(bigImg);
+        document.body.appendChild(overlay);
+
+        // Fermeture en cliquant n'importe où
+        overlay.addEventListener('click', () => {
+            overlay.remove();
+        });
+    });
+});

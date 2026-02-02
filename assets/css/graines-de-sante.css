@@ -35,12 +35,13 @@ body {
     font-weight: bold;
 }
 
-/* HERO */
+/* HERO — DESKTOP */
 .hero {
     text-align: center;
     padding: 6rem 2rem;
     background: radial-gradient(circle at 50% 20%, #1e3a8a 0%, #0d1117 60%);
     position: relative;
+    overflow: hidden;
 }
 
 .hero-banner {
@@ -48,16 +49,15 @@ body {
     width: 90%;
     margin: 0 auto;
     display: block;
-    box-shadow: 0 0 40px rgba(96, 165, 250, 0.3);
     border-radius: var(--radius);
+    box-shadow: 0 0 40px rgba(96, 165, 250, 0.3);
 }
 
-/* Glow effects */
 .glow-circle {
     position: absolute;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(59, 130, 246, 0.25), transparent 70%);
+    background: radial-gradient(circle, rgba(59,130,246,0.25), transparent 70%);
     top: -120px;
     left: 50%;
     transform: translateX(-50%);
@@ -71,6 +71,7 @@ body {
     bottom: 0;
     background: linear-gradient(90deg, transparent, #3b82f6, transparent);
 }
+
 
 /* SECTIONS */
 .section {
@@ -241,4 +242,46 @@ footer {
     color: var(--text-light);
     margin-bottom: 1rem;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .hero-banner {
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+  }
+
+  .section {
+    padding: 1.5rem 1rem;
+  }
+
+  .stack {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-track img {
+    height: 200px;
+    padding: 0.5rem;
+  }
+
+  .btnGit {
+    width: 90%;
+    display: block;
+    margin: 1rem auto;
+  }
+
+  .objectifs li {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.back-nav {
+  position: relative;
+  z-index: 20;
 }

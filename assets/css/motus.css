@@ -224,3 +224,45 @@ footer {
     border: 1px solid var(--border-glow);
     width: fit-content;
 }
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .hero-banner {
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+  }
+
+  .section {
+    padding: 1.5rem 1rem;
+  }
+
+  .stack {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-track img {
+    height: 200px;
+    padding: 0.5rem;
+  }
+
+  .btnGit {
+    width: 90%;
+    display: block;
+    margin: 1rem auto;
+  }
+
+  .objectifs li {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.back-nav {
+  position: relative;
+  z-index: 20;
+}
