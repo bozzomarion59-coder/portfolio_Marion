@@ -206,10 +206,11 @@ nav a:hover {
 
 .project img {
     width: 220px;
-    height: 140px;
     object-fit: cover;
     border-radius: var(--radius);
     box-shadow: 0 4px 15px var(--shadow);
+    max-width: 100%;
+    height: auto;
 }
 
 .project div {
@@ -329,9 +330,11 @@ footer {
 
     .project img {
         width: 100%;
+        max-width: 300px;
         height: auto;
-        max-width: 350px;
+        object-fit: cover;
     }
+
 
     .project div {
         width: 100%;
