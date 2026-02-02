@@ -2,193 +2,167 @@
 <html lang="fr">
 
 <head>
+    <meta charset="UTF-8">
+    <title>Portfolio – Marion Bozzo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Marion BOZZO</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
 <body>
-    <!--Création de la nav barre-->
     <nav>
         <ul>
-            <li><a href="#biographie" class="nav">À propos</a></li>
-            <li><a href="#skillTechniques" class="nav">Compétences techniques</a></li>
-            <li><a href="#projets" class="nav">Projets réalisés</a></li>
-            <li><a href="#contacts" class="nav">Contacts</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contacts</a></li>
         </ul>
     </nav>
 
+    <!-- HERO -->
+    <header class="hero">
+        <img src="assets/images/Logo.png" alt="Logo Marion" class="hero-logo">
 
-    <!--Création du headerhero-->
-    <header>
-        <div class="imageLogo">
-            <img src="./Logo.png" alt="mon logo">
-        </div>
-        <div class="headerHero">
-            <h1>Portfolio de Marion Bozzo</h1>
-            <p>Développeuse Web/Mobile Junior</p>
+        <h1 class="hero-title">Marion Bozzo</h1>
+        <h2 class="hero-subtitle">Développeuse Web & Mobile junior</h2>
+
+        <p class="hero-tagline">
+            Actuellement en formation Développeur Web & Web Mobile, je poursuis mon évolution vers le titre
+            Concepteur Développeur d’Applications en alternance afin de renforcer mes compétences et participer
+            à des projets ambitieux.
+        </p>
+
+
+        <div class="hero-effects">
+            <span class="glow-circle"></span>
+            <span class="glow-line"></span>
         </div>
     </header>
 
-    <!--Section sur le "A propos"-->
-    <section id="biographie" class="section">
-        
+    <main>
 
-        <!--Cards Parcours-->
-        <div id="firstCards" class="parcours">
-            <h2>A propos de moi :</h2>
-            <div>
-                <p>En reconversion, après 5 années dans le domaine du social, je suis en formation aujourd’hui en tant
-                    que développeur web/mobile au sein de ForEachAcademy.
-                    Ce parcours me permet déjà de maîtriser divers langages informatiques tels que HTML, CSS, JavaScript
-                    mais aussi de nombreux outils.
-                </p>
-            </div>
-        </div>
+        <!-- À PROPOS -->
+        <section id="about" class="section">
+            <h2>À propos</h2>
 
+            <p>
+                Après 5 années dans le domaine du social, j’ai choisi de me reconvertir dans le développement web et
+                mobile.
+                Aujourd’hui formée à ForEach Academy, je maîtrise les technologies modernes du web et je crée des
+                projets
+                complets, accessibles et bien structurés.
+            </p>
 
-        <!--Cards Compétences-->
-        <div id="secondCards" class="competences">
-            <h3>Mes compétences :</h3>
-            <div>
-                <ul>
-                    <li class="skill">Suivi des évolutions technologiques</li>
-                    <li class="skill">Maîtrise de JavaScript, CSS et HTML</li>
-                    <li class="skill">Maitrise outils : React, Node.js, boostrap</li>
-                    <li class="skill">Respecter cahier des charge du client</li>
-                    <li class="skill">Analyser la situation et les besoins du client</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!--Section sur les compétences techniques-->
-    <section id="skillTechniques" class="section">
-        <h2>Mes compétences techniques :</h2>
-
-
-
-        <div class="listecompetences">
-            <ul>
-                <div class="list">
-                    <li><i class="devicon-html5-plain colored"></i> HTML</li>
-                </div>
-                <div class="list">
-                    <li><i class="devicon-css3-plain colored"></i> CSS</li>
-                </div>
-                <div class="list">
-                    <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
-                </div>
-                <div class="list">
-                    <li><i class="devicon-react-original colored"></i> React</li>
-                </div class="list">
-                <div class="list">
-                    <li><i class="devicon-bootstrap-plain colored"></i> Bootstrap</li>
-                </div>
-                <div class="list">
-                    <li><i class="devicon-nodejs-plain colored"></i> Node.js</li>
-                </div>
-                <div class="list">
-                    <li><i class="fa-brands fa-uikit"></i> MUI (Material UI)</li>
-                </div>
-                <div class="list">
-                    <li><i class="devicon-github-original colored"></i> GitHub</li>
-                </div>
-                <div class="list">
-                    <li><i class="devicon-figma-plain colored"></i> Figma</li>
-                </div>
+            <h3>Compétences transversales :</h3>
+            <ul class="transversales">
+                <li>Analyse des besoins</li>
+                <li>Respect du cahier des charges</li>
+                <li>Veille technologique</li>
+                <li>Organisation & autonomie</li>
             </ul>
-        </div>
-    </section>
+        </section>
 
-    <!--Section sur les projets réalisés-->
-    <section id="projets" class="section">
-        <h2>Mes projets réalisés :</h2>
+        <!-- COMPÉTENCES TECHNIQUES -->
+        <section id="skills" class="section">
+            <h2>Compétences techniques</h2>
 
-        <div class="cardsProjets">
-            <!--Premier Projet-->
-            <div class="card">
-                <img src="./ProjetCV.png" alt="Capture projet CV" class="card-img">
-                <h3>Création CV</h3>
-                <p>Projet de création d’un CV en ligne avec HTML/CSS, design responsive.</p>
-                <a href="https://github.com/bozzomarion59-coder/CV_Marion.git" target="_blank" class="btnGit">
-                    Voir sur GitHub
-                </a>
+            <ul class="skills-grid">
+                <li><i class="devicon-html5-plain colored"></i> HTML</li>
+                <li><i class="devicon-css3-plain colored"></i> CSS</li>
+                <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
+                <li><i class="devicon-react-original colored"></i> React</li>
+                <li><i class="devicon-nodejs-plain colored"></i> Node.js</li>
+                <li><i class="devicon-mysql-plain colored"></i> MySQL</li>
+                <li><i class="devicon-bootstrap-plain colored"></i> Bootstrap</li>
+                <li><i class="fa-brands fa-uikit"></i> MUI</li>
+                <li><i class="devicon-github-original colored"></i> GitHub</li>
+                <li><i class="devicon-figma-plain colored"></i> Figma</li>
+            </ul>
+        </section>
+
+        <!-- PROJETS -->
+        <section id="projects" class="section">
+            <h2>Projets réalisés</h2>
+
+            <div class="project">
+                <img src="assets/images/ProjetCV.png" alt="Projet CV">
+                <div>
+                    <h3>Création CV</h3>
+                    <p>CV en ligne responsive en HTML/CSS.</p>
+                    <a href="pages/cv.html" class="btnGit">Voir le projet</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="assets/images/JeuMotus.png" alt="Motus">
+                <div>
+                    <h3>Motus</h3>
+                    <p>Jeu interactif en JavaScript.</p>
+                    <a href="pages/motus.html" class="btnGit">Voir le projet</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="assets/images/ProjetGestionUser.png" alt="Gestion utilisateurs">
+                <div>
+                    <h3>Gestion des utilisateurs</h3>
+                    <p>CRUD complet avec Node.js, Express et MySQL.</p>
+                    <a href="pages/gestion-utilisateurs.html" class="btnGit">Voir le projet</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="assets/images/ProjetLOL.png" alt="LOL">
+                <div>
+                    <h3>League Of Legends</h3>
+                    <p>Projet React/Vite avec quiz intégré.</p>
+                    <a href="pages/lol.html" class="btnGit">Voir le projet</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="assets/images/ProjetEscapeGame.png" alt="Escape Game">
+                <div>
+                    <h3>Escape Game</h3>
+                    <p>Site interactif avec réservation et paiement.</p>
+                    <a href="pages/escapegame.html" class="btnGit">Voir le projet</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="assets/images/ProjetGraines.pdf" alt="Graines de Santé">
+                <div>
+                    <h3>Graines de Santé</h3>
+                    <p>Projet de fin d’étude – Application en cours de développement.</p>
+                    <a href="pages/graines-de-sante.html" class="btnGit">Voir le projet</a>
+                </div>
             </div>
 
 
-            <!--Deuxième projet-->
-            <div class="card">
-                <img src="./JeuMotus.png" alt="Capture projet Motus" class="card-img">
-                <h3>Motus</h3>
-                <p>Jeu inspiré du Motus, développé en JavaScript avec logique et interface interactive.</p>
-                <a href="https://github.com/LeRenardeauCode/Motus-projet.git" target="_blank" class="btnGit">
-                    Voir sur GitHub
-                </a>
-            </div>
 
-            <!--troisième projet-->
-            <div class="card">
-                <img src="./ProjetGestionUser.png" alt="Capture projet Gestion des utilisateurs" class="card-img">
-                <h3>Gestion des utilisateurs</h3>
-                <p>Application permettant de gérer les utilisateurs (CRUD, base de données, interface simple).</p>
-                <a href="https://github.com/bozzomarion59-coder/Gestion_Utilisateurs.git" target="_blank"
-                    class="btnGit">
-                    Voir sur GitHub
-                </a>
-            </div>
+        </section>
 
-            <!--quatrière projet-->
-            <div class="card">
-                <img src="./ProjetLOL.png" alt="Capture projet Projet_League_Of_Legends" class="card-img">
-                <h3>League Of Legends</h3>
-                <p>Un projet interactif construit avec React, JavaScript et Vite, qui centralise les informations de champions, régions et items de League of Legends. 
-                Il inclut également une partie quiz pour tester vos connaissances sur le jeu.</p>
-                <a href="https://github.com/bozzomarion59-coder/Projet_League_Of_Legends.git" target="_blank"
-                    class="btnGit">
-                    Voir sur GitHub
-                </a>
-            </div>
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <h2>Contact</h2>
 
-            <!--cinq projet-->
-            <div class="card">
-                <img src="./ProjetEscapeGame.png" alt="Capture projet Escape_Game" class="card-img">
-                <h3>Escape Game</h3>
-                <p>Site web interactif permettant de découvrir, réserver et gérer des escape games, avec vidéos de présentation, paiement sécurisé et espace administrateur. 
-                Conçu pour être responsive, sécurisé et intuitif</p>
-                <a href="https://github.com/bafghost59/escapegame28.git" target="_blank"
-                    class="btnGit">
-                    Voir sur GitHub
-                </a>
-            </div>
+            <p><i class="fa-solid fa-envelope"></i> <a href="mailto:bozzomarion59@gmail.com">bozzomarion59@gmail.com</a>
+            </p>
+            <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/marion-bozzo-7b6573180"
+                    target="_blank">LinkedIn</a></p>
+            <p><i class="fa-brands fa-github"></i> <a href="https://github.com/bozzomarion59-coder"
+                    target="_blank">GitHub</a></p>
+        </section>
 
+    </main>
 
-        </div>
-    </section>
-
-    <!--Section contacts-->
-    <section id="contacts" class="section">
-    <h2>Contacts :</h2>
-    <p><i class="fa-solid fa-envelope"></i> 
-       <a href="mailto:bozzomarion59@gmail.com">bozzomarion59@gmail.com</a></p>
-    <p><i class="fa-brands fa-linkedin"></i> 
-       <a href="https://www.linkedin.com/in/marion-bozzo-7b6573180" target="_blank">LinkedIn</a></p>
-    <p><i class="fa-brands fa-github"></i> 
-       <a href="https://github.com/bozzomarion59-coder" target="_blank">GitHub</a></p>
-</section>
-
-
-    <!--Footer-->
+    <!-- FOOTER -->
     <footer>
-        <p>© 2025 Marion Bozzo</p>
+        <p>© 2026 Marion Bozzo</p>
     </footer>
 
-
-    <script src="index.js"></script>
-
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>

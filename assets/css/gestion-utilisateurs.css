@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-dark: #0d1117;
+    --bg-card: rgba(255, 255, 255, 0.05);
+    --bg-card-hover: rgba(255, 255, 255, 0.12);
+    --blue: #3b82f6;
+    --blue-light: #60a5fa;
+    --text-light: #e5e7eb;
+    --text-muted: #9ca3af;
+    --border-glow: rgba(59, 130, 246, 0.4);
+    --radius: 14px;
+    --transition: 0.3s ease;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+/* NAV RETOUR */
+.back-nav {
+    padding: 1rem 2rem;
+}
+
+.back-nav a {
+    color: var(--blue-light);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 6rem 2rem;
+    background: radial-gradient(circle at 50% 20%, #1e3a8a 0%, #0d1117 60%);
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: var(--blue-light);
+    text-shadow: 0 0 20px rgba(96,165,250,0.6);
+}
+
+.subtitle {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: var(--text-muted);
+}
+
+/* Effets lumineux */
+.glow-circle {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(59,130,246,0.25), transparent 70%);
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: blur(60px);
+}
+
+.glow-line {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+}
+
+/* SECTIONS */
+.section {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    border: 1px solid var(--border-glow);
+}
+
+.section h2 {
+    text-align: center;
+    color: var(--blue-light);
+    margin-bottom: 1.5rem;
+}
+
+/* OBJECTIFS */
+.objectifs {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.objectifs li {
+    margin: 0.5rem 0;
+}
+
+/* STACK */
+.stack {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.stack li {
+    background: var(--bg-card-hover);
+    padding: 0.7rem 1.2rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border-glow);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* --- CARROUSEL --- */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--radius);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-track img {
+    width: 100%;
+    height: 350px;
+    object-fit: contain; 
+    background: #0d1117; 
+    padding: 1rem;
+}
+
+/* Boutons */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid var(--blue-light);
+    color: var(--blue-light);
+    font-size: 2rem;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background: var(--blue-light);
+    color: #000;
+}
+
+/* Positionnement */
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
+}
+
+/* BOUTON GITHUB */
+.center {
+    text-align: center;
+}
+
+.btnGit {
+    padding: 10px 15px;
+    background: var(--blue);
+    color: white;
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.btnGit:hover {
+    background: var(--blue-light);
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-muted);
+}
+
+/* Objectifs principaux */
+.section h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.objectifs {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.objectifs li {
+    background: var(--bg-card-hover);
+    padding: 0.6rem 1rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border-glow);
+    width: fit-content;
+}
+
+/* Paragraphe avant GitHub */
+.intro-projet {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    text-align: center;
+}
