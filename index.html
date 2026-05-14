@@ -1,168 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/portfolio_Marion/images/Logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio de Marion Bozzo, Conceptrice Développeuse d'Applications en recherche d'alternance. Découvrez mon parcours, mes compétences et mes projets web." />
+    <meta name="keywords" content="Marion Bozzo, portfolio, développeuse web, alternance, CDA, concepteur développeur applications, React, Node.js, frontend, backend" />
+    <meta name="author" content="Marion Bozzo" />
 
-<head>
-    <meta charset="UTF-8">
-    <title>Portfolio – Marion Bozzo</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/index.css">
-</head>
+    <meta property="og:title" content="Marion Bozzo — Portfolio" />
+    <meta property="og:description" content="Conceptrice Développeuse d'Applications en recherche d'alternance" />
+    <meta property="og:type" content="website" />
 
-<body>
-    <nav>
-        <ul>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#skills">Compétences</a></li>
-            <li><a href="#projects">Projets</a></li>
-            <li><a href="#contact">Contacts</a></li>
-        </ul>
-    </nav>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <!-- HERO -->
-    <header class="hero">
-        <img src="assets/images/Logo.png" alt="Logo Marion" class="hero-logo">
+    <title>Marion Bozzo — Portfolio Concepteur Développeur d'Applications</title>
 
-        <h1 class="hero-title">Marion Bozzo</h1>
-        <h2 class="hero-subtitle">Développeuse Web & Mobile junior</h2>
-
-        <p class="hero-tagline">
-            Actuellement en formation Développeur Web & Web Mobile, je poursuis mon évolution vers le titre
-            Concepteur Développeur d’Applications en alternance afin de renforcer mes compétences et participer
-            à des projets ambitieux.
-        </p>
-
-
-        <div class="hero-effects">
-            <span class="glow-circle"></span>
-            <span class="glow-line"></span>
-        </div>
-    </header>
-
-    <main>
-
-        <!-- À PROPOS -->
-        <section id="about" class="section">
-            <h2>À propos</h2>
-
-            <p>
-                Après 5 années dans le domaine du social, j’ai choisi de me reconvertir dans le développement web et
-                mobile.
-                Aujourd’hui formée à ForEach Academy, je maîtrise les technologies modernes du web et je crée des
-                projets
-                complets, accessibles et bien structurés.
-            </p>
-
-            <h3>Compétences transversales :</h3>
-            <ul class="transversales">
-                <li>Analyse des besoins</li>
-                <li>Respect du cahier des charges</li>
-                <li>Veille technologique</li>
-                <li>Organisation & autonomie</li>
-            </ul>
-        </section>
-
-        <!-- COMPÉTENCES TECHNIQUES -->
-        <section id="skills" class="section">
-            <h2>Compétences techniques</h2>
-
-            <ul class="skills-grid">
-                <li><i class="devicon-html5-plain colored"></i> HTML</li>
-                <li><i class="devicon-css3-plain colored"></i> CSS</li>
-                <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
-                <li><i class="devicon-react-original colored"></i> React</li>
-                <li><i class="devicon-nodejs-plain colored"></i> Node.js</li>
-                <li><i class="devicon-mysql-plain colored"></i> MySQL</li>
-                <li><i class="devicon-bootstrap-plain colored"></i> Bootstrap</li>
-                <li><i class="fa-brands fa-uikit"></i> MUI</li>
-                <li><i class="devicon-github-original colored"></i> GitHub</li>
-                <li><i class="devicon-figma-plain colored"></i> Figma</li>
-            </ul>
-        </section>
-
-        <!-- PROJETS -->
-        <section id="projects" class="section">
-            <h2>Projets réalisés</h2>
-
-            <div class="project">
-                <img src="assets/images/ProjetCV.png" alt="Projet CV">
-                <div>
-                    <h3>Création CV</h3>
-                    <p>CV en ligne responsive en HTML/CSS.</p>
-                    <a href="pages/cv.html" class="btnGit">Voir le projet</a>
-                </div>
-            </div>
-
-            <div class="project">
-                <img src="assets/images/JeuMotus.png" alt="Motus">
-                <div>
-                    <h3>Motus</h3>
-                    <p>Jeu interactif en JavaScript.</p>
-                    <a href="pages/motus.html" class="btnGit">Voir le projet</a>
-                </div>
-            </div>
-
-            <div class="project">
-                <img src="assets/images/ProjetGestionUser.png" alt="Gestion utilisateurs">
-                <div>
-                    <h3>Gestion des utilisateurs</h3>
-                    <p>CRUD complet avec Node.js, Express et MySQL.</p>
-                    <a href="pages/gestion-utilisateurs.html" class="btnGit">Voir le projet</a>
-                </div>
-            </div>
-
-            <div class="project">
-                <img src="assets/images/ProjetLOL.png" alt="LOL">
-                <div>
-                    <h3>League Of Legends</h3>
-                    <p>Projet React/Vite avec quiz intégré.</p>
-                    <a href="pages/lol.html" class="btnGit">Voir le projet</a>
-                </div>
-            </div>
-
-            <div class="project">
-                <img src="assets/images/ProjetEscapeGame.png" alt="Escape Game">
-                <div>
-                    <h3>Escape Game</h3>
-                    <p>Site interactif avec réservation et paiement.</p>
-                    <a href="pages/escapegame.html" class="btnGit">Voir le projet</a>
-                </div>
-            </div>
-
-            <div class="project">
-                <img src="assets/images/ProjetGraines.pdf" alt="Graines de Santé">
-                <div>
-                    <h3>Graines de Santé</h3>
-                    <p>Projet de fin d’étude – Application en cours de développement.</p>
-                    <a href="pages/graines-de-sante.html" class="btnGit">Voir le projet</a>
-                </div>
-            </div>
-
-
-
-        </section>
-
-        <!-- CONTACT -->
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-
-            <p><i class="fa-solid fa-envelope"></i> <a href="mailto:bozzomarion59@gmail.com">bozzomarion59@gmail.com</a>
-            </p>
-            <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/marion-bozzo-7b6573180"
-                    target="_blank">LinkedIn</a></p>
-            <p><i class="fa-brands fa-github"></i> <a href="https://github.com/bozzomarion59-coder"
-                    target="_blank">GitHub</a></p>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 Marion Bozzo</p>
-    </footer>
-
-    <script src="assets/js/index.js"></script>
-</body>
-
+    <script>
+      // Récupère l'URL sauvegardée par 404.html (SPA fallback GitHub Pages)
+      (function () {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
